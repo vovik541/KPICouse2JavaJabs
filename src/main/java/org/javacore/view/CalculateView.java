@@ -8,12 +8,6 @@ import java.util.List;
 import static org.javacore.service.Initializer.STATIONS;
 
 public class CalculateView {
-    public static final String INPUT_INT_DATA =
-            "Enter an integer = ";
-    public static final String WRONG_INPUT_INT_DATA =
-            "Wrong input! Repeat please! ";
-    public static final String OUR_INT = "Increment result = ";
-
     public static final String TRAINS_WITH_GENERAL_SEATS_MESSAGE = "1. Get trains with general seats";
     public static final String TRAINS_BY_STATION_AND_DEPARTURE_MESSAGE = "2. Get trains by station and departure time";
     public static final String CHANGE_SAVED_DATA_WAY_MESSAGE = "3. Change result save method";
