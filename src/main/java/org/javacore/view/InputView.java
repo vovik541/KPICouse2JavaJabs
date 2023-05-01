@@ -42,6 +42,7 @@ public class InputView {
                 logger.info("User chose not appropriate option. Message: " + wrongNumberProvidedException.getMessage());
             } catch (Exception e) {
                 view.printMessage(INPUT_NOT_A_NUMBER_ERROR_MESSAGE);
+                sc.nextLine();
                 logger.info("User input exception. Retrying to receive result");
             }
         }
