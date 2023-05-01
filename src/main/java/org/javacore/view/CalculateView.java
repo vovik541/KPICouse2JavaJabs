@@ -13,7 +13,6 @@ public class CalculateView {
     public static final String CHANGE_SAVED_DATA_WAY_MESSAGE = "3. Change result save method";
 
     public static final String EXIT_MESSAGE = "4. Exit";
-    public static final String INPUT_NOT_VALID_MESSAGE = "Please, chose number between %d and %d";
 
     public void printGreetingMessage() {
         System.out.println("All trains:");
@@ -25,10 +24,6 @@ public class CalculateView {
         System.out.println(TRAINS_BY_STATION_AND_DEPARTURE_MESSAGE);
         System.out.println(CHANGE_SAVED_DATA_WAY_MESSAGE);
         System.out.println(EXIT_MESSAGE);
-    }
-
-    public void printMessageAndResult(String message, int value) {
-        System.out.println(message + value);
     }
 
     public void printTrainsToConsole(List<Train> trains) {
