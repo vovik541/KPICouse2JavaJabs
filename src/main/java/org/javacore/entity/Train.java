@@ -15,6 +15,9 @@ public class Train {
 
     private HashMap<PlaceType, Long> places;
 
+    public Train() {
+    }
+
     public Train(Station station, Long trainNumber, LocalDateTime departureTime, HashMap<PlaceType, Long> places) {
         this.station = station;
         this.trainNumber = trainNumber;

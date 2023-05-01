@@ -5,7 +5,7 @@ import org.javacore.entity.Train;
 
 import java.util.List;
 
-import static org.javacore.service.Initializer.STATIONS;
+import static org.javacore.util.Initializer.STATIONS;
 
 public class CalculateView {
     public static final String TRAINS_WITH_GENERAL_SEATS_MESSAGE = "1. Get trains with general seats";

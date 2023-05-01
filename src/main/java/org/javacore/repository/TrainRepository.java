@@ -8,6 +8,6 @@ public interface TrainRepository {
 
     List<Train> getTrains();
 
-    List<Train> saveTrains(List<Train> trains);
+    List<Train> saveTrains(List<Train> trains, String fileName);
 
 }

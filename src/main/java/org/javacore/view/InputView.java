@@ -9,7 +9,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 import static org.javacore.constant.Constants.*;
-import static org.javacore.service.Initializer.STATIONS;
+import static org.javacore.util.Initializer.STATIONS;
 
 public class InputView {
     private static Scanner sc;

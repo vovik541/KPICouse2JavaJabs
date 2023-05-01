@@ -1,9 +1,10 @@
-package org.javacore.service;
+package org.javacore.util;
 
 import org.javacore.entity.PlaceType;
 import org.javacore.entity.Station;
 import org.javacore.entity.Train;
 import org.javacore.repository.impl.JSONTrainRepository;
+import org.javacore.service.TrainService;
 import org.javacore.validator.impl.ResultValidator;
 import org.javacore.view.CalculateView;
 import org.javacore.view.InputView;

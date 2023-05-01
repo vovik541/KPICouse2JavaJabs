@@ -9,6 +9,9 @@ public class Station {
 
     private String StationCity;
 
+    public Station() {
+    }
+
     public Station(Long stationId, String stationName, String stationCity) {
         this.stationId = stationId;
         this.stationName = stationName;

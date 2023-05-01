@@ -4,32 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="feb75a4b-f4e0-469a-8f6b-4817cb67ece2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javacore/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javacore/config/TrainConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javacore/constant/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javacore/controller/TrainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javacore/entity/PlaceType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javacore/entity/Station.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javacore/entity/Train.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javacore/exception/WrongDateTimeProvidedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javacore/exception/WrongNumberProvidedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javacore/repository/TrainRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javacore/repository/impl/JSONTrainRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javacore/service/Initializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javacore/service/TrainService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javacore/validator/TrainsValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javacore/validator/impl/ResultValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javacore/view/CalculateView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javacore/view/InputView.java" afterDir="false" />
+    <list default="true" id="feb75a4b-f4e0-469a-8f6b-4817cb67ece2" name="Changes" comment="code cleanup">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/javacore/util/FilePathManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javacore/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javacore/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javacore/config/TrainConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javacore/config/TrainConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javacore/entity/Station.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javacore/entity/Station.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javacore/entity/Train.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javacore/entity/Train.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javacore/repository/TrainRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javacore/repository/TrainRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javacore/repository/impl/JSONTrainRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javacore/repository/impl/JSONTrainRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javacore/service/Initializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javacore/util/Initializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javacore/view/CalculateView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javacore/view/CalculateView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javacore/view/InputView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javacore/view/InputView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +57,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/projects/components-librarian-microservice&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/projects/second-session&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
@@ -105,7 +92,27 @@
       <option name="presentableId" value="Default" />
       <updated>1682695240106</updated>
     </task>
+    <task id="LOCAL-00001" summary="init commit">
+      <created>1682882105208</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682882105208</updated>
+    </task>
+    <task id="LOCAL-00002" summary="code cleanup">
+      <created>1682882212187</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682882212187</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init commit" />
+    <MESSAGE value="code cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="code cleanup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -119,6 +126,21 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/javacore/view/InputView.java</url>
           <line>43</line>
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/javacore/repository/impl/JSONTrainRepository.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/javacore/repository/impl/JSONTrainRepository.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/javacore/repository/impl/JSONTrainRepository.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
