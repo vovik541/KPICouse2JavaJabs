@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="feb75a4b-f4e0-469a-8f6b-4817cb67ece2" name="Changes" comment="code cleanup">
+    <list default="true" id="feb75a4b-f4e0-469a-8f6b-4817cb67ece2" name="Changes" comment="result saving added">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/javacore/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javacore/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/javacore/config/TrainConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/javacore/controller/TrainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javacore/controller/TrainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/javacore/repository/TrainRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javacore/repository/TrainFileRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/javacore/repository/impl/JSONTrainRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javacore/repository/impl/JSONTrainFileRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javacore/repository/impl/JSONTrainFileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javacore/repository/impl/JSONTrainFileRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/javacore/service/TrainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javacore/service/TrainService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/javacore/util/Initializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javacore/util/Initializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javacore/validator/impl/ResultValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javacore/validator/impl/ResultValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/javacore/view/CalculateView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javacore/view/CalculateView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/javacore/view/InputView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javacore/view/InputView.java" afterDir="false" />
     </list>
@@ -118,26 +117,34 @@
       <option name="project" value="LOCAL" />
       <updated>1682964444478</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="result saving added">
+      <created>1682966256364</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682966256364</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init commit" />
     <MESSAGE value="json serialization implemented" />
     <MESSAGE value="code cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="code cleanup" />
+    <MESSAGE value="result saving added" />
+    <option name="LAST_COMMIT_MESSAGE" value="result saving added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/javacore/view/InputView.java</url>
-          <line>25</line>
+          <line>29</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/javacore/view/InputView.java</url>
-          <line>44</line>
+          <line>50</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -152,32 +159,32 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/javacore/controller/TrainController.java</url>
-          <line>46</line>
+          <line>53</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/javacore/controller/TrainController.java</url>
-          <line>45</line>
+          <line>52</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/javacore/controller/TrainController.java</url>
-          <line>71</line>
+          <line>80</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/javacore/controller/TrainController.java</url>
-          <line>73</line>
+          <line>82</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/javacore/controller/TrainController.java</url>
-          <line>49</line>
+          <line>56</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/javacore/view/InputView.java</url>
-          <line>73</line>
+          <line>80</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>

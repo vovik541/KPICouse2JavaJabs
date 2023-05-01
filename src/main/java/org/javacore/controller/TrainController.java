@@ -1,5 +1,8 @@
 package org.javacore.controller;
 
+
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.javacore.entity.Station;
 import org.javacore.entity.Train;
 import org.javacore.service.TrainService;
@@ -12,6 +15,8 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public class TrainController implements Runnable {
+
+    private static Logger logger = LogManager.getLogger(TrainController.class);
     private Thread trainController;
     private final AtomicBoolean running = new AtomicBoolean(false);
     private CalculateView calculateView;
@@ -24,6 +29,7 @@ public class TrainController implements Runnable {
         this.inputView = inputView;
         this.trainService = trainService;
         this.validator = validator;
+        logger.debug("TrainController created");
     }
 
     public void run() {
@@ -36,6 +42,7 @@ public class TrainController implements Runnable {
 
         calculateView.printGreetingMessage();
         calculateView.printTrainsToConsole(trainService.findAllTrains());
+        logger.info("Showed all trains to user");
 
         while (running.get()) {
             calculateView.printMainMenu();
@@ -62,10 +69,12 @@ public class TrainController implements Runnable {
     public void start() {
         trainController = new Thread(this);
         trainController.start();
+        logger.debug("TrainController started");
     }
 
     public void stop() {
         running.set(false);
+        logger.debug("Application is shutting down");
     }
 
     public void processResult(List<Train> result) {

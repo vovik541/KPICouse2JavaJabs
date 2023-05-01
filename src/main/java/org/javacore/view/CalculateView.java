@@ -1,5 +1,7 @@
 package org.javacore.view;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.javacore.entity.Station;
 import org.javacore.entity.Train;
 
@@ -8,6 +10,7 @@ import java.util.List;
 import static org.javacore.util.Initializer.STATIONS;
 
 public class CalculateView {
+    private static Logger logger = LogManager.getLogger(CalculateView.class);
     public static final String TRAINS_WITH_GENERAL_SEATS_MESSAGE = "1. Get trains with general seats";
     public static final String TRAINS_BY_STATION_AND_DEPARTURE_MESSAGE = "2. Get trains by station and departure time";
     public static final String EXIT_MESSAGE = "3. Exit";
@@ -25,6 +28,7 @@ public class CalculateView {
         System.out.println(TRAINS_WITH_GENERAL_SEATS_MESSAGE);
         System.out.println(TRAINS_BY_STATION_AND_DEPARTURE_MESSAGE);
         System.out.println(EXIT_MESSAGE);
+        logger.info("Showed main menu for user");
     }
 
     public void printTrainsToConsole(List<Train> trains) {
@@ -52,6 +56,7 @@ public class CalculateView {
         for (Station station : STATIONS.values()) {
             System.out.println(String.format("|%7s |%12s |%12s |", station.getStationId(), station.getStationCity(), station.getStationName()));
         }
+        logger.info("Showed all stations for user");
     }
 
     public void printResultNotFound() {
