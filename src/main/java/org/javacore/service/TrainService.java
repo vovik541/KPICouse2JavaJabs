@@ -3,16 +3,18 @@ package org.javacore.service;
 import org.javacore.entity.PlaceType;
 import org.javacore.entity.Station;
 import org.javacore.entity.Train;
-import org.javacore.repository.TrainRepository;
+import org.javacore.repository.TrainFileRepository;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
+import static org.javacore.util.FilePathManager.getFilePath;
+
 public class TrainService {
 
-    private TrainRepository repository;
+    private TrainFileRepository repository;
 
-    public TrainService(TrainRepository repository) {
+    public TrainService(TrainFileRepository repository) {
         this.repository = repository;
     }
 
@@ -28,11 +30,19 @@ public class TrainService {
         return repository.getTrains();
     }
 
-    public TrainRepository getRepository() {
+    public String saveTrainsToFile(List<Train> trains, String fileName) {
+        if (!fileName.isEmpty()) {
+            repository.saveTrains(trains, fileName + ".json");
+            return "saved to file: " + getFilePath(fileName + ".json");
+        }
+        return "the result was not saved";
+    }
+
+    public TrainFileRepository getRepository() {
         return repository;
     }
 
-    public void setRepository(TrainRepository repository) {
+    public void setRepository(TrainFileRepository repository) {
         this.repository = repository;
     }
 }

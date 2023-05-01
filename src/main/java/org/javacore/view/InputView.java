@@ -27,6 +27,7 @@ public class InputView {
             try {
 
                 number = sc.nextInt();
+                sc.nextLine();
                 if (number >= minValue && number <= maxValue) {
                     return number;
                 } else {
@@ -74,5 +75,11 @@ public class InputView {
         int userChoice = readUserChoiceFromConsole(1, STATIONS.size());
 
         return STATIONS.get((long) userChoice);
+    }
+
+    public String readFileNameFromConsole() {
+        view.askForSaveFileOutput();
+        String result = sc.nextLine();
+        return result;
     }
 }

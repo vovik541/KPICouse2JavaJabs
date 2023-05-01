@@ -5,7 +5,7 @@ import com.fasterxml.jackson.datatype.jdk8.Jdk8Module;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import com.fasterxml.jackson.module.paramnames.ParameterNamesModule;
 import org.javacore.entity.Train;
-import org.javacore.repository.TrainRepository;
+import org.javacore.repository.TrainFileRepository;
 
 import java.io.File;
 import java.io.IOException;
@@ -19,7 +19,7 @@ import java.util.List;
 import static org.javacore.constant.Constants.STORAGE_FILE_NAME;
 import static org.javacore.util.FilePathManager.getFilePath;
 
-public class JSONTrainRepository implements TrainRepository {
+public class JSONTrainFileRepository implements TrainFileRepository {
     private ObjectMapper objectMapper = new ObjectMapper()
             .registerModule(new ParameterNamesModule())
             .registerModule(new Jdk8Module())

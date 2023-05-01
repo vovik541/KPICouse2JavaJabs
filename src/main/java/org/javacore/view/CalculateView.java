@@ -10,9 +10,11 @@ import static org.javacore.util.Initializer.STATIONS;
 public class CalculateView {
     public static final String TRAINS_WITH_GENERAL_SEATS_MESSAGE = "1. Get trains with general seats";
     public static final String TRAINS_BY_STATION_AND_DEPARTURE_MESSAGE = "2. Get trains by station and departure time";
-    public static final String CHANGE_SAVED_DATA_WAY_MESSAGE = "3. Change result save method";
+    public static final String EXIT_MESSAGE = "3. Exit";
 
-    public static final String EXIT_MESSAGE = "4. Exit";
+    public static final String ASK_INPUT_FILE_MESSAGE = "\nPlease, enter output file name if you want to save the result or press enter";
+
+    public static final String EMPTY_RESULT_MESSAGE = "Sorry, but there is no suitable trains by this search. Try again with other request";
 
     public void printGreetingMessage() {
         System.out.println("All trains:");
@@ -22,7 +24,6 @@ public class CalculateView {
         System.out.println("\n Input number to male a choice:");
         System.out.println(TRAINS_WITH_GENERAL_SEATS_MESSAGE);
         System.out.println(TRAINS_BY_STATION_AND_DEPARTURE_MESSAGE);
-        System.out.println(CHANGE_SAVED_DATA_WAY_MESSAGE);
         System.out.println(EXIT_MESSAGE);
     }
 
@@ -54,6 +55,10 @@ public class CalculateView {
     }
 
     public void printResultNotFound() {
-        System.out.println("Sorry, but there is no suitable trains by this search. Try again with other request");
+        System.out.println(EMPTY_RESULT_MESSAGE);
+    }
+
+    public void askForSaveFileOutput() {
+        System.out.println(ASK_INPUT_FILE_MESSAGE);
     }
 }

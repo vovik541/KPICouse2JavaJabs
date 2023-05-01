@@ -3,7 +3,7 @@ package org.javacore.util;
 import org.javacore.entity.PlaceType;
 import org.javacore.entity.Station;
 import org.javacore.entity.Train;
-import org.javacore.repository.impl.JSONTrainRepository;
+import org.javacore.repository.impl.JSONTrainFileRepository;
 import org.javacore.service.TrainService;
 import org.javacore.validator.impl.ResultValidator;
 import org.javacore.view.CalculateView;
@@ -150,11 +150,11 @@ public class Initializer {
         return inputView;
     }
 
-    private static JSONTrainRepository jsonTrainRepository;
+    private static JSONTrainFileRepository jsonTrainRepository;
 
-    public static JSONTrainRepository getJSONTrainRepository() {
+    public static JSONTrainFileRepository getJSONTrainRepository() {
         if (jsonTrainRepository == null) {
-            jsonTrainRepository = new JSONTrainRepository();
+            jsonTrainRepository = new JSONTrainFileRepository();
         }
         return jsonTrainRepository;
     }

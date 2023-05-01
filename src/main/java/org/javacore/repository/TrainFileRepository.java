@@ -4,7 +4,7 @@ import org.javacore.entity.Train;
 
 import java.util.List;
 
-public interface TrainRepository {
+public interface TrainFileRepository {
 
     List<Train> getTrains();
 

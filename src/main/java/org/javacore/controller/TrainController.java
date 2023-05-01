@@ -39,7 +39,7 @@ public class TrainController implements Runnable {
 
         while (running.get()) {
             calculateView.printMainMenu();
-            userChoice = inputView.readUserChoiceFromConsole(1, 4);
+            userChoice = inputView.readUserChoiceFromConsole(1, 3);
 
             switch (userChoice) {
                 case 1:
@@ -51,8 +51,6 @@ public class TrainController implements Runnable {
                     departureAt = inputView.readDepartureTimeFromConsole();
                     result = trainService.findTrainsByDepartureTimeAndStation(departureAt, station);
                     processResult(result);
-                    break;
-                case 3:
                     break;
                 default:
                     stop();
@@ -73,6 +71,9 @@ public class TrainController implements Runnable {
     public void processResult(List<Train> result) {
         if (validator.validate(result)) {
             calculateView.printTrainsToConsole(result);
+            String fileNameFromConsole = inputView.readFileNameFromConsole();
+            String saved = trainService.saveTrainsToFile(result, fileNameFromConsole);
+            calculateView.printMessage(saved);
         } else {
             calculateView.printResultNotFound();
         }
